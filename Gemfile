@@ -1,14 +1,21 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-
+gem 'gravatar_image_tag'
+gem 'will_paginate'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
 group :development do
+  gem 'capybara'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'guard-rspec'
+  gem 'spork'
+  gem 'guard-spork'
+  #gem 'ruby_gntp'
+  gem 'growl'
 end
 
 group :production do
@@ -17,6 +24,12 @@ end
 
 group :test do
   gem 'rspec'
+  gem 'spork'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'factory_girl_rails'
+  gem 'growl'
+  gem 'rb-fsevent'
 end
 
 # Gems used only for assets and not required
